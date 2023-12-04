@@ -1,0 +1,405 @@
+#container {
+    background-image: url('./asids/bgimg.jpg');
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+#mainbox {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0.6;
+    border-bottom: solid 10px rgb(138, 131, 131);
+}
+
+.manue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding-top: 20px;
+}
+
+.manue>div {
+    width: 45%;
+}
+
+.manue>:last-child {
+    text-align: right;
+}
+
+.manue>div>img {
+    width: 50%;
+    position: relative;
+    z-index: 10;
+    text-shadow: 2px 2px 5px red;
+}
+
+
+.manue>div>select {
+    margin-right: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 5;
+    border: solid 1px white;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.manue>div>button {
+    margin-right: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    border: solid 1px white;
+    opacity: 10;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 2px 2px 5px 5px rgb(7, 7, 7);
+    cursor: pointer;
+}
+
+#mainbox>:last-child {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+    width: 80%;
+    margin: auto;
+    margin-top: 130px;
+}
+
+#mainbox>:last-child>h1,
+p {
+    padding: 0;
+    margin: 0;
+
+}
+
+#mainbox>:last-child>button {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    border: solid 1px white;
+    opacity: 10;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+#mainbox>:last-child>input {
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 15px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 5;
+    border: solid 1px white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 720px) {
+
+    #mainbox>:last-child {
+        margin-top: 100px;
+    }
+
+    #mainbox>:last-child>button {
+        font-size: 20px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 8px;
+    }
+
+    #mainbox>:last-child>input {
+        font-size: 20px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 8px;
+    }
+
+    .section-first>:first-child {
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width:719px) and (min-width: 391px) {
+  
+    .section-first>div>img {
+        width: 100%;
+        position: absolute;
+        top: -53px;
+        left: 5px;
+    }
+    .manue>div>img {
+        width: 40%;
+    }
+
+    .manue>div>select {
+        margin-right: 7px;
+        font-size: 8px;
+        font-weight: bold;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 6px;
+    }
+
+    .manue>div>button {
+        margin-right: 7px;
+        font-size: 8px;
+        font-weight: bold;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 6px;
+    }
+
+    #mainbox>:last-child {
+        margin-top: 70px;
+    }
+
+    #mainbox>:last-child>button {
+        font-size: 10px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 8px;
+    }
+
+    #mainbox>:last-child>input {
+        font-size: 10px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 8px;
+    }
+
+    #mainbox>:last-child>h1,
+    p {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .section-first>:first-child>h1{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width:391px) and (min-width:100px) {
+    .manue>div>select {
+        margin-right: 7px;
+        font-size: 5px;
+        /* font-weight: bold; */
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 6px;
+    }
+
+    #mainbox>:last-child {
+        margin-top: 50px;
+    }
+
+    #mainbox>:last-child>button {
+        font-size: 6px;
+        padding: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 6px;
+    }
+
+    #mainbox>:last-child>input {
+        font-size: 6px;
+        padding: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 6px;
+    }
+
+    #mainbox>:last-child>h1,
+    p {
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+
+    .manue>div>button {
+        margin-right: 7px;
+        font-size: 5px;
+        /* font-weight: bold; */
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 6px;
+    }
+
+}
+
+.section-first {
+    background-color: black;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 10px rgb(138, 131, 131)
+}
+
+.section-first>div {
+    width: 40%;
+    color: white;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-first>div>img {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+    left: 5px;
+}
+
+.section-first>div>video {
+    width: 73%;
+}
+
+.section-first>:first-child {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.section-first>:first-child>h1,
+h6 {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* @media screen and ( max-width:1024px ) and (min-width:720) {
+    .section-first{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+.section-second {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 10px rgb(138, 131, 131)
+}
+
+.section-second>div {
+    width: 40%;
+    color: white;
+}
+
+.section-second>div>img {
+    width: 100%;
+}
+
+.section-second>:last-child {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.section-second>:last-child>h1,
+h6 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.faq {
+    padding-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    border-bottom: solid 10px rgb(138, 131, 131)
+}
+
+.faq>div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    gap: 5px;
+}
+
+.faq>div>h3 {
+    background-color: rgb(82, 81, 81);
+    padding: 16px;
+    font-weight: bold;
+
+}
+
+footer {
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+footer>h2 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+footer>div {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+footer>div>div {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* @media screen and (min-width: 960px) */
+/* .default-ltr-cache-jpuyb8  */
